@@ -5,34 +5,33 @@ const   gulp        = require('gulp'),
 
 
 gulp.task('sass', function() {
-    const header_sass = gulp.src("app/blocks/header/header-sass/*.sass")
+    const header_sass = gulp.src('app/blocks/header/header-sass/*.sass')
         .pipe(sass())
-        .pipe(gulp.dest("app/blocks/header/header-css"))
-        .pipe(browserSync.reload({stream: true}));
-    return sass(header_sass)
+        .pipe(gulp.dest('app/blocks/header/header-css'))
+        .pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task('pug', function () {
 
-    gulp.src("app/index-pug/*.pug")
+    gulp.src('app/index-pug/*.pug')
         .pipe(pug({
             pretty: true
         }))
-        .pipe(gulp.dest("app/"))
-        .pipe(browserSync.reload({stream: true}));
+        .pipe(gulp.dest('app/'))
+        .pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task('browserSync', function () {
     browserSync({
         server: {
-            baseDir: "app/"
+            baseDir: 'app/'
         },
         notify: false
     });
 });
 
 gulp.task('watch', ['browserSync', 'pug', 'sass'], function () {
-    gulp.watch("app/blocks/header/**/*.sass", ['sass']);
-    gulp.watch("app/index-pug/*.pug", ['pug']);
+    gulp.watch('app/blocks/header/header-sass/*.sass', ['sass']);
+    gulp.watch('app/index-pug/*.pug', ['pug']);
 });
 
