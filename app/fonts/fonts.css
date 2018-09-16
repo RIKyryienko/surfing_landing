@@ -1,0 +1,14 @@
+@font-face {
+    font-family: League Spartan;
+    src: url("LeagueSpartan/LeagueSpartan-Bold.otf");
+}
+
+@font-face {
+    font-family: Playfair Display;
+    src: url("Playfair_Display/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("Poppins/Poppins-Regular.ttf");
+}

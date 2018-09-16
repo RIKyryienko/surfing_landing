@@ -2,13 +2,106 @@ body
   padding: 0
   margin: 0
 
+img
+  width: 100%
+
 .header
   max-width: 1440px
+  padding-top: 37px
   margin: 0 auto
   background-image: repeating-linear-gradient(to right, lightgreen 0px, lightgreen 107px, gray 107px, gray 108px, lightgreen 108px, lightgreen 305px)
 
 .header-logo-and-nav
+  max-width: 914px
+  margin-left: 107px
+  display: flex
+  justify-content: baseline
   background-color: rgba(255, 152, 67, 0.3)
+
+.header-logo
+  margin-right: 175px
+  width: 16px
+  height: 44px
+
+.header-nav-item
+  margin: 0 19.2px
+  font-family: 'League Spartan', sans-serif
+  font-size: 9px
+  font-weight: 700
+  line-height: 66px
+  text-transform: uppercase
+  text-decoration: none
+  letter-spacing: 5.58px
+  color: #0b0c11
+
+.header-text
+  max-width: 717px
+  margin-left: 107px
+
+.lt-blue-text
+  font-family: 'League Spartan', sans-serif
+  font-size: 9px
+  font-weight: 700
+  line-height: 66px
+  text-transform: uppercase
+  letter-spacing: 5.4px
+  color: #5da8ef
+
+.header-title
+  margin: 0
+  font-family: 'Playfair Display', sans-serif
+  font-size: 62px
+  line-height: 64px
+
+.header-description
+  max-width: 400px
+  font-family: 'Poppins', sans-serif
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+  letter-spacing: 0.35px
+  color: #8f8f8f
+
+.slider-nav
+  font-family: "League Spartan", sans-serif
+  font-size: 10px
+  font-weight: 700
+  line-height: 66px
+  text-transform: uppercase
+  letter-spacing: 4px
+
+.slider-nav::before
+  position: relative
+  top: 0
+  display: inline-block
+  content: ""
+  width: 10px
+  height: 10px
+  transform: rotate(45deg)
+  border-left: 2px solid black
+  border-bottom: 2px solid black
+
+.slider-nav::after
+  position: relative
+  top: 0
+  display: inline-block
+  content: ""
+  width: 10px
+  height: 10px
+  transform: rotate(-45deg)
+  border-right: 2px solid black
+  border-bottom: 2px solid black
+
+
+
+.header-image
+  width: 1016px
+  height: 572px
+  overflow: hidden
+
+
+
+
 
 .header-text
   background-color: rgba(167, 79, 255, 0.5)
@@ -20,6 +113,6 @@ body
   background-color: rgba(255, 222, 7, 0.63)
 
 .social-btn
-  width: 12px
-  height: 12px
+  width: 20px
+  height: 20px
   border: 1px solid black
