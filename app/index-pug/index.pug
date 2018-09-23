@@ -2,34 +2,39 @@ doctype html
 html(lang='en')
     head
         meta(charset='UTF-8')
+        link(rel='stylesheet' href='reset/reset.css')
         link(rel='stylesheet' href='blocks/header/header-css/header.css')
         link(rel='stylesheet' href='fonts/fonts.css')
         title Surfing
     body
         header.header
-            div.header-logo-and-nav
-                div.header-logo
+            div.header__logo-and-nav
+                div.logo
                     img(src='blocks/header/header-images/header-logo.png' alt='Oops!')
-                nav.header-nav
-                    a.header-nav-item(href="#") Stories
-                    a.header-nav-item(href="#") Events
-                    a.header-nav-item(href="#") Places
-                    a.header-nav-item(href="#") Boards
-            div.header-text
-                span.lt-blue-text Your
-                h1.header-title Beautiful Escape
-                p.header-description.
-                    One of the greatest things about the sport of surfing is that you need only three things: your body,
-                    a surfboard, and a wave.
-                div.header-slider
-                    p.slider-nav.
-                        1/5
-            div.header-image
-                img(src='blocks/header/header-images/header-main-image.jpg' alt='Oops!')
-            div.header-social-and-tip
-                p.header-tip.
-                    First surfing magazine
-                div.social-buttons
-                    div.social-btn.social-buttons-tumblr
-                    div.social-btn.social-buttons-twitter
-                    div.social-btn.social-buttons-vimeo
+                nav.nav
+                    a.nav__item(href="#") Stories
+                    a.nav__item(href="#") Events
+                    a.nav__item(href="#") Places
+                    a.nav__item(href="#") Boards
+            div.header__content
+                div.header__content-text_inline-block
+                    span.header__content-text_blue Your
+                    h1.header__content-text-title Beautiful Escape
+                    pre.header__content-text-description.
+                        One of the greatest things about the sport of surfing is
+                        that you need only three things: your body,
+                        a surfboard, and a wave.
+                    div.header__content-slider
+                        p.header__content-slider-items.
+                            1/5
+                div.header__content-image_inline-block
+                div.header__content-social_inline-block
+                    p.header__content-social-text.
+                        First surfing magazine
+                    div.header__content-social-links
+                        div.social-btn.social-tumblr
+                            img(src='blocks/header/header-images/header-icons/tumblr.png')
+                        div.social-btn.social-twitter
+                            img(src='blocks/header/header-images/header-icons/twitter.png')
+                        div.social-btn.social-vimeo
+                            img(src='blocks/header/header-images/header-icons/vimeo.png')
