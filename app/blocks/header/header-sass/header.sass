@@ -1,69 +1,79 @@
 .header
-  max-width: 1440px
-  padding-top: 37px
+  width: 1440px
+  padding-top: 38px
+  padding-bottom: 38px
   margin: 0 auto
   background-image: repeating-linear-gradient(to right, #fff 0px, #fff 107px, #f5f5f5 107px, #f5f5f5 108px, #fff 108px, #fff 305px)
 
 
+.clearfix
+  content: ""
+  display: table
+  clear: both
+
+
+.header-nav__item,
+.header-text__word_blue,
+.header-text__slider,
+.header-image::after
+  font-family: "League Spartan", sans-serif
+  font-size: 9px
+  font-weight: 700
+  text-transform: uppercase
+
+
 .header__logo-and-nav
-  max-width: 914px
-  margin-left: 107px
   display: flex
   align-items: baseline
+  max-width: 914px
+  margin-left: 107px
 
 
-.logo
+.header-logo
   margin-right: 175px
   width: 16px
   height: 44px
 
 
-.nav__item
+.header-nav__item
   margin: 0 19.2px
-  font-family: 'League Spartan', sans-serif
-  font-size: 9px
-  font-weight: 700
-  text-transform: uppercase
   text-decoration: none
   letter-spacing: 5.58px
+  line-height: 0
   color: #0b0c11
 
 
-.header__content
-  margin-top: 45px
+.header-content
+  position: relative
+  margin-top: 44px
   margin-left: 107px
   font-size: 0
 
 
-.header__content-text_inline-block
-  display: inline-block
-  vertical-align: bottom
+.header-text
   position: relative
-  max-width: 204px
   z-index: 1
+  float: left
+  max-width: 550px
+  padding-top: 191px
 
 
-.header__content-text_blue
+.header-text__word_blue
   display: block
-  margin-bottom: 20px
-  font-family: 'League Spartan', sans-serif
-  font-size: 9px
-  font-weight: 700
-  text-transform: uppercase
+  margin-bottom: 23px
   letter-spacing: 5.4px
   color: #5da8ef
 
 
-.header__content-text-title
-  margin-bottom: 18px
+.header-text__title
+  margin-bottom: 23px
   font-family: 'Playfair Display', sans-serif
   font-size: 62px
-  white-space: nowrap
 
 
-.header__content-text-description
-  max-width: 400px
-  margin-bottom: 180px
+.header-text__description
+  width: 400px
+  margin-bottom: 176.5px
   font-family: 'Poppins', sans-serif
   font-size: 14px
   font-weight: 300
@@ -72,14 +82,12 @@
   color: #8f8f8f
 
 
-.header__content-slider-items
-  font-family: "League Spartan", sans-serif
+.header-text__slider
   font-size: 10px
-  font-weight: 700
-  text-transform: uppercase
   letter-spacing: 4px
 
-.header__content-slider-items::before
+
+.header-text__slider::before
   position: relative
   top: 0
   left: 1px
@@ -91,7 +99,8 @@
   border-left: 2px solid black
   border-bottom: 2px solid black
 
-.header__content-slider-items::after
+
+.header-text__slider::after
   position: relative
   top: 0
   display: inline-block
@@ -103,36 +112,49 @@
   border-bottom: 2px solid black
 
 
-.header__content-image_inline-block
-  display: inline-block
-  vertical-align: top
-  width: 1016px
+.header-image
+  position: absolute
+  top: 0
+  left: 211px
+  width: 1009px
   height: 572px
   overflow: hidden
+  box-shadow: -15.898px 25.441px 65px 0px rgba(11, 12, 17, 0.2)
   background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), url("../header-images/header-main-image.jpg") no-repeat
   background-size: cover
   background-position-y: -90px
 
-
-.header__content-social_inline-block
-  display: inline-block
-  vertical-align: bottom
-  width: 110px
-  background-color: rgba(93, 168, 239, 0.55)
-
-
-.header__content-social-text
-  position: relative
-  transform: rotate(-90deg)
-  transform-origin: 0 0
-  font-size: 16px
+.header-image::after
+  position: absolute
+  top: 0
+  left: 1000px
+  z-index: 2
+  content: "First surfing magazine"
   white-space: nowrap
 
-.social-buttons
-  max-width: 20px
-  background-color: rgba(255, 222, 7, 0.63)
+
+.header-socials
+  width: 69px
+  padding-top: 488px
+  float: right
 
 
-.social-btn
-  width: 21px
+.header-social-btn
+  margin: 16px 0
+
+
+.social-tumblr
+  margin-top: 0
+  width: 13px
   height: 21px
+
+
+.social-twitter
+  width: 18px
+  height: 15px
+
+
+.social-vimeo
+  margin-bottom: 0
+  width: 18px
+  height: 16px
