@@ -4,11 +4,16 @@
 }
 
 @font-face {
-    font-family: Playfair Display;
+    font-family: Playfair Display-Bold;
     src: url("Playfair_Display/PlayfairDisplay-Bold.ttf");
 }
 
 @font-face {
+    font-family: Playfair Display-Regular;
+    src: url("Playfair_Display/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
     font-family: Poppins;
-    src: url("Poppins/Poppins-ExtraLight.ttf");
+    src: url("Poppins/Poppins-Light.ttf");
 }

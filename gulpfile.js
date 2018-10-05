@@ -9,6 +9,12 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(gulp.dest('app/blocks/header/header-css'))
         .pipe(browserSync.reload({ stream: true }));
+
+    const quote_sass = gulp.src('app/blocks/quote/quote-sass/*.sass')
+        .pipe(sass())
+        .pipe(gulp.dest('app/blocks/quote/quote-css'))
+        .pipe(browserSync.reload({ stream: true }));
+
 });
 
 gulp.task('pug', function () {
@@ -31,7 +37,7 @@ gulp.task('browserSync', function () {
 });
 
 gulp.task('watch', ['browserSync', 'pug', 'sass'], function () {
-    gulp.watch('app/blocks/header/header-sass/*.sass', ['sass']);
-    gulp.watch('app/index-pug/*.pug', ['pug']);
+    gulp.watch('app/blocks/**/*.sass', ['sass']);
+    gulp.watch('app/**/*.pug', ['pug']);
 });
 
