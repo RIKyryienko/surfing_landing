@@ -35,7 +35,7 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
-  max-width: 1333px;
+  width: 1333px;
   margin-top: 44px;
   margin-left: 107px; }
 
@@ -102,7 +102,6 @@
 .header-image {
   width: 1011px;
   height: 572px;
-  overflow: hidden;
   box-shadow: -15.898px 25.441px 65px 0px rgba(11, 12, 17, 0.2);
   background: url("../header-images/header-main-image.jpg") no-repeat;
   background-size: cover;
@@ -117,11 +116,11 @@
   position: absolute;
   top: 40px;
   left: 1155px;
+  content: "First Surfing Magazine";
   transform: rotate(-90deg);
   white-space: nowrap;
   letter-spacing: 5.58px;
-  color: #cececf;
-  content: "First Surfing Magazine"; }
+  color: #cececf; }
 
 .header-social-btn {
   margin: 26px 0; }
