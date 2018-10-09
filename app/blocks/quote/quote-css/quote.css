@@ -8,21 +8,12 @@
 .quote-content {
   position: relative;
   display: flex;
-<<<<<<< HEAD
   align-items: center;
-=======
->>>>>>> f319be95a815fc8cd24399448782648c6466cb91
   flex-direction: column; }
 
 .quote__text {
-  display: block;
   width: 615px;
-<<<<<<< HEAD
   margin-bottom: 29px;
-=======
-  margin: auto;
-  margin-bottom: 28px;
->>>>>>> f319be95a815fc8cd24399448782648c6466cb91
   font-family: 'Playfair Display-Regular', serif;
   font-size: 26px;
   font-weight: 400;
@@ -33,11 +24,6 @@
   color: #333; }
 
 .quote__author {
-<<<<<<< HEAD
-=======
-  display: block;
-  margin: auto;
->>>>>>> f319be95a815fc8cd24399448782648c6466cb91
   margin-bottom: 157px;
   font-family: "League Spartan", sans-serif;
   font-size: 9px;
