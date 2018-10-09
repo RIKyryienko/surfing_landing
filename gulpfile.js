@@ -15,6 +15,10 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('app/blocks/quote/quote-css'))
         .pipe(browserSync.reload({ stream: true }));
 
+    const footer_sass = gulp.src('app/blocks/footer/footer-sass/*.sass')
+        .pipe(sass())
+        .pipe(gulp.dest('app/blocks/footer/footer-css'))
+        .pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task('pug', function () {
