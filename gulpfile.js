@@ -19,6 +19,16 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(gulp.dest('app/blocks/footer/footer-css'))
         .pipe(browserSync.reload({ stream: true }));
+
+    const article_video_sass = gulp.src('app/blocks/article-video/article-video-sass/*.sass')
+        .pipe(sass())
+        .pipe(gulp.dest('app/blocks/article-video/article-video-css'))
+        .pipe(browserSync.reload({ stream: true }));
+
+    const main_sass = gulp.src('app/sass/main.sass')
+        .pipe(sass())
+        .pipe(gulp.dest('app/css'))
+        .pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task('pug', function () {

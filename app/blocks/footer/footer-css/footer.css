@@ -1,7 +1,7 @@
 .footer {
   width: 1440px;
-  padding: 35px 0 95px 0;
   margin: 0 auto;
+  padding: 35px 0 95px 0;
   background-image: repeating-linear-gradient(to right, #fff 0px, #fff 107px, #f5f5f5 107px, #f5f5f5 108px, #fff 108px, #fff 305px); }
 
 .footer__content {
@@ -15,7 +15,6 @@
   margin-right: 6.6px; }
 
 .footer__content-menu {
-  max-width: 610px;
   margin: 37px 0; }
 
 .content-menu__item {
@@ -30,8 +29,7 @@
 
 .footer__content-social {
   display: flex;
-  align-items: baseline;
-  max-width: 610px; }
+  align-items: baseline; }
 
 .content-social__btn {
   display: block;
