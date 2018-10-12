@@ -1,61 +1,62 @@
 .header {
   width: 1440px;
-  padding: 38px 0;
+  padding-top: 38px;
+  padding-bottom: 92.5px;
   margin: 0 auto;
   background-image: repeating-linear-gradient(to right, #fff 0px, #fff 107px, #f5f5f5 107px, #f5f5f5 108px, #fff 108px, #fff 305px); }
 
-.header-nav__item,
-.header-text__word_blue,
-.header-text__slider,
-.header-socials::before {
+.header__nav-link,
+.header__word_blue,
+.header__slider,
+.header__socials::before {
   font-family: "League Spartan", sans-serif;
   font-size: 9px;
   font-weight: 700;
   text-transform: uppercase; }
 
-.header__logo-and-nav {
+.header__menu {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   min-width: 300px;
   margin-left: 107px; }
 
-.header-logo {
+.header__logo {
+  display: block;
   margin-right: 175px;
   width: 16px;
   height: 44px; }
 
-.header-nav__item {
+.header__nav-link {
   margin: 0 19.2px;
   letter-spacing: 5.58px;
-  line-height: 0;
   color: #0b0c11; }
 
-.header-content {
+.header__content {
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 1333px;
-  margin-top: 44px;
+  margin-top: 45px;
   margin-left: 107px; }
 
-.header-text {
+.header__text {
   position: absolute;
   top: 207px;
   left: 0;
   min-width: 300px; }
 
-.header-text__word_blue {
+.header__word_blue {
   display: block;
   margin-bottom: 15px;
   letter-spacing: 5.4px;
   color: #5da8ef; }
 
-.header-text__title {
+.header__title {
   margin-bottom: 15px;
   font-family: 'Playfair Display-Bold', sans-serif;
   font-size: 62px; }
 
-.header-text__description {
+.header__quote {
   width: 400px;
   margin-bottom: 182px;
   font-family: 'Poppins', sans-serif;
@@ -65,22 +66,23 @@
   letter-spacing: 0.35px;
   color: #8f8f8f; }
 
-.header-text__slider {
+.header__slider {
+  align-self: flex-end;
   position: relative;
-  top: -1px;
+  top: -5px;
   left: 25px;
   width: 30px;
   font-size: 10px;
   letter-spacing: 4px; }
 
-.slider-first-numeral {
+.header__slider-first-num {
   color: #5da8ef; }
 
-.slider-slash {
+.header__slider-slash {
   color: #ececec; }
 
-.header-text__slider::before,
-.header-text__slider::after {
+.header__slider::before,
+.header__slider::after {
   position: absolute;
   top: -3px;
   content: "";
@@ -89,28 +91,29 @@
   border-left: 1px solid #ececec;
   border-bottom: 1px solid #ececec; }
 
-.header-text__slider::before {
+.header__slider::before {
   transform: rotate(45deg);
-  left: -22px; }
+  left: -23px; }
 
-.header-text__slider::after {
+.header__slider::after {
   transform: rotate(-135deg);
   right: -18px; }
 
-.header-image {
+.header__image {
   width: 1011px;
   height: 572px;
+  margin-left: 178.7px;
   box-shadow: -15.898px 25.441px 65px 0px rgba(11, 12, 17, 0.2);
   background: url("../header-images/header-main-image.jpg") no-repeat;
   background-size: cover;
   background-position-y: -90px; }
 
-.header-socials {
+.header__socials {
   align-self: flex-end;
   margin: 0 47.5px;
   width: 18px; }
 
-.header-socials::before {
+.header__socials::before {
   position: absolute;
   top: 40px;
   left: 1155px;
@@ -120,19 +123,20 @@
   white-space: nowrap;
   color: #cececf; }
 
-.header-social-btn {
+.header__social-link {
+  display: block;
   margin: 26px 0; }
 
-.social-tumblr {
+.social-link-tumblr {
   margin: 0 auto;
   width: 13px;
   height: 21px; }
 
-.social-twitter {
+.social-link-twitter {
   width: 18px;
   height: 15px; }
 
-.social-vimeo {
+.social-link-vimeo {
   margin-bottom: 0;
   width: 18px;
   height: 16px; }
