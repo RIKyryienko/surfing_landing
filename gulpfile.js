@@ -25,6 +25,21 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('app/blocks/article-video/article-video-css'))
         .pipe(browserSync.reload({ stream: true }));
 
+    const surfboards_shop_sass = gulp.src('app/blocks/surfboards-shop/surfboards-shop-sass/*.sass')
+        .pipe(sass())
+        .pipe(gulp.dest('app/blocks/surfboards-shop/surfboards-shop-css'))
+        .pipe(browserSync.reload({ stream: true }));
+
+    const surf_training_sass = gulp.src('app/blocks/surf-training/surf-training-sass/*.sass')
+        .pipe(sass())
+        .pipe(gulp.dest('app/blocks/surf-training/surf-training-css'))
+        .pipe(browserSync.reload({ stream: true }));
+
+    const point_break_sass = gulp.src('app/blocks/point-break/point-break-sass/*.sass')
+        .pipe(sass())
+        .pipe(gulp.dest('app/blocks/point-break/point-break-css'))
+        .pipe(browserSync.reload({ stream: true }));
+
     const main_sass = gulp.src('app/sass/main.sass')
         .pipe(sass())
         .pipe(gulp.dest('app/css'))

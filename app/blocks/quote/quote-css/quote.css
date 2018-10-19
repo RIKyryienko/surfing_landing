@@ -34,8 +34,8 @@
 
 .quote__author::after {
   position: absolute;
-  top: 167px;
-  left: 715px;
+  top: 62%;
+  left: 49.67%;
   content: "";
   width: 1px;
   height: 100px;
