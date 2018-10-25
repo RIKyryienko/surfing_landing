@@ -17,14 +17,14 @@
 .header__menu {
   display: flex;
   align-items: center;
-  min-width: 300px;
   margin-left: 107px; }
 
 .header__logo {
   display: block;
-  margin-right: 175px;
-  width: 16px;
-  height: 44px; }
+  width: 16px; }
+
+.header__nav {
+  margin-left: 175px; }
 
 .header__nav-link {
   margin: 0 19.2px;
@@ -34,25 +34,21 @@
 .header__content {
   position: relative;
   display: flex;
-  justify-content: space-between;
-  width: 1333px;
   margin-top: 45px;
   margin-left: 107px; }
 
 .header__text {
   position: absolute;
-  top: 207px;
-  left: 0;
-  min-width: 300px; }
+  top: 200px; }
 
 .header__word_blue {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   letter-spacing: 5.4px;
   color: #5da8ef; }
 
 .header__title {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   font-family: 'Playfair Display-Bold', sans-serif;
   font-size: 62px; }
 
@@ -88,6 +84,7 @@
   content: "";
   width: 11px;
   height: 11px;
+  cursor: pointer;
   border-left: 1px solid #ececec;
   border-bottom: 1px solid #ececec; }
 
@@ -124,19 +121,15 @@
   color: #cececf; }
 
 .header__social-link {
-  display: block;
-  margin: 26px 0; }
+  display: block; }
+
+.header__social-link + .header__social-link {
+  margin-top: 26px; }
 
 .social-link-tumblr {
   margin: 0 auto;
-  width: 13px;
-  height: 21px; }
+  width: 13px; }
 
-.social-link-twitter {
-  width: 18px;
-  height: 15px; }
-
+.social-link-twitter,
 .social-link-vimeo {
-  margin-bottom: 0;
-  width: 18px;
-  height: 16px; }
+  width: 18px; }
