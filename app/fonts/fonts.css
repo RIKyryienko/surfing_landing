@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: Playfair Display-Black;
+    src: url("Playfair_Display/PlayfairDisplay-Black.ttf");
+}
+
+@font-face {
     font-family: Playfair Display-Regular;
     src: url("Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
